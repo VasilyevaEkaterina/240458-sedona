@@ -1,0 +1,14 @@
+@mixin menu-mobile {
+  font-size: 18px;
+  line-height: 40px;
+  color: $color-light;
+  background-color: $bg-color;
+}
+@mixin text {
+  font-size: 14px;
+  line-height: 21px;
+}
+@mixin title {
+  font-size: 18px;
+  line-height: 26px;
+}

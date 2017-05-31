@@ -1,0 +1,23 @@
+/*Background and font colors*/
+$bg-color: #84b5d3;
+$bg-light: #ebebeb;
+$element-down: #5496bd;
+$element-disabled: #e5e5e5;
+$element-hvr: #669ec0;
+
+$color: #000000;
+$dark-grey: #333333;
+$color-light: #ffffff;
+$menu-down: rgba($color, 0.3);
+$menu-active-down: #604e43;
+$menu-active: #766357;
+/*Forms*/
+$input-color: #F2F2F2;
+$input-hvr: #E5E5E5;
+$input-down: #D5D5D5;
+$input-checked: #373737;
+
+$tablet-widths: 768px;
+$desktop-widths: 1200px;
+
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);

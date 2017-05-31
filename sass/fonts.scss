@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("fonts/ptsans.woff2") format("woff2"),
+       url("fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("fonts/ptsansbold.woff2") format("woff2"),
+       url("fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  @include text;
+  color: $color;
+  font-family: "PT Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
