@@ -1,0 +1,25 @@
+.advantages {
+  text-transform: uppercase;
+  display: block;
+}
+.advantages__row {
+  &--grey {
+    background-color: $bg-light;
+  }
+  @media (min-width: $tablet-widths) {
+    display: flex;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+  &--blue {
+    background-color: $bg-color;
+    @media (min-width: $tablet-widths) {
+      height: 256px;
+      overflow: hidden;
+    }
+    @media (min-width: $desktop-widths) {
+
+    }
+  }
+}

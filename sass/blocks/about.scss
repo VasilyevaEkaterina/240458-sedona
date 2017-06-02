@@ -1,0 +1,103 @@
+.about {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 27px;
+  padding-bottom: 0px;
+  @media (min-width: $tablet-widths) {
+    padding-left: 145px;
+    padding-right: 145px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-top: 95px;
+    padding-left: 380px;
+    padding-right: 380px;
+    padding-bottom: 0;
+  }
+}
+.about--index {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  @media (min-width: $tablet-widths) {
+    padding-top: 40px;
+    padding-bottom: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-top: 40px;
+    padding-bottom: 35px;
+    padding-left: 330px;
+    padding-right: 330px;
+  }
+}
+.about--photo {
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-bottom: 8px;
+  @media (min-width: $tablet-widths) {
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 380px;
+    padding-right: 380px;
+    padding-top: 90px;
+  }
+}
+.about__title {
+  @include title;
+  padding-bottom: 10px;
+  @media (min-width: $tablet-widths) {
+    font-size: 21px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.about__title--large {
+  @media (min-width: $tablet-widths) {
+    @include title;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.about__text {
+  @include text;
+  line-height: 26px;
+  @media (min-width: $tablet-widths) {
+    margin-bottom: 18px;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.about--index::after {
+  position: absolute;
+  z-index: 4;
+  content: "";
+  background-image: url("/img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 40px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (min-width: $tablet-widths) {
+    display: none;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}

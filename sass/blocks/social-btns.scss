@@ -1,0 +1,123 @@
+.social-btns {
+  display: flex;
+  align-content: center;
+  padding: 35px 80px;
+  justify-content: space-between;
+  margin: 0 auto;
+  @media (min-width: $tablet-widths) {
+    justify-content: center;
+    padding: 0;
+    margin-left: 35px;
+    width: 33.333333%;
+  }
+  @media (min-width: $desktop-widths) {
+    padding: 0;
+  }
+}
+.social-btns__btn {
+  text-decoration: none;
+  background-color: $bg-color;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  cursor: pointer;
+  @media (min-width: $tablet-widths) {
+    margin-left: 5px;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.social-btns__btn:hover {
+  text-decoration: none;
+  background-color: #669ec0;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+.social-btns__btn:active {
+  text-decoration: none;
+  background-color: #5496bd;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+.social-btns__btn--tw {
+  position: relative;
+}
+.social-btns__btn--tw::after {
+  position: absolute;
+  content: "";
+  background-image: url("/img/icon-twitter.svg");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  top: 17px;
+  left: 15px;
+}
+.social-btns__btn--tw:active::after {
+  position: absolute;
+  content: "";
+  background-image: url("/img/icon-twitter.svg");
+  background-size: contain;
+  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  top: 17px;
+  left: 15px;
+}
+.social-btns__btn--fb {
+  position: relative;
+}
+.social-btns__btn--fb::after {
+  position: absolute;
+  content: "";
+  background-image: url("/img/icon-facebook.svg");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  top: 14px;
+  left: 20px;
+}
+.social-btns__btn--fb:active::after {
+  position: absolute;
+  content: "";
+  background-image: url("/img/icon-facebook.svg");
+  background-size: contain;
+  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  top: 14px;
+  left: 20px;
+}
+.social-btns__btn--youtube {
+  position: relative;
+}
+
+.social-btns__btn--youtube::after {
+  position: absolute;
+  content: "";
+  background-image: url("/img/icon-youtube.svg");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  top: 17px;
+  left: 15px;
+}
+.social-btns__btn--youtube:active::after {
+  position: absolute;
+  content: "";
+  background-image: url("/img/icon-youtube.svg");
+  background-size: contain;
+  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  top: 17px;
+  left: 15px;
+}

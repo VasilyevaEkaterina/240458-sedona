@@ -1,0 +1,132 @@
+.main-nav {
+  position: relative;
+  @include text;
+  cursor: pointer;
+  @media (min-width: $tablet-widths) {
+    margin-left: 20px;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.main-nav__items {
+  @media (min-width: $tablet-widths) {
+    display: flex;
+    justify-content: space-around;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.main-nav__item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 5px 0 rgba($dark-grey,0.8);
+  @media (min-width: $tablet-widths) {
+    box-shadow: 0 0 0 0 white;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.main-nav__item:nth-child(2) {
+  @media (min-width: $tablet-widths) {
+    padding-left: 30px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 25px;
+  }
+}
+.main-nav__item:nth-child(3) {
+  @media (min-width: $tablet-widths) {
+    padding-left: 150px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 250px;
+  }
+}
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.main-nav__link {
+  display: block;
+  vertical-align: middle;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  @include menu-mobile;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  @media (min-width: $tablet-widths) {
+    background-color: white;
+    color: $color;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    padding: 15px;
+  }
+  @media (min-width: $desktop-widths) {
+  }
+}
+.main-nav__link:hover {
+  background-color: #72a6c5;
+  @media (min-width: $tablet-widths) {
+    background-color: white;
+    color: $bg-color;
+  }
+  @media (min-width: $desktop-widths) {
+    background-color: white;
+    color: $bg-color;
+  }
+}
+.main-nav__link:active {
+  background-color: #5496bd;
+  color: rgba($color-light,0.3);
+  @media (min-width: $tablet-widths) {
+    background-color: white;
+    color: $bg-light;
+  }
+  @media (min-width: $desktop-widths) {
+    background-color: white;
+    color: $bg-light;
+  }
+}
+.main-nav__link:disabled {
+  background-color: $bg-light;
+}
+.main-nav--closed {
+  display: none;
+}
+.main-nav__link--active {
+  @media (min-width: $tablet-widths) {
+    background-color: white;
+    color: $menu-active;
+  }
+  @media (min-width: $desktop-widths) {
+    background-color: white;
+    color: $menu-active;
+  }
+}
+.main-nav__link--active:active {
+  @media (min-width: $tablet-widths) {
+    background-color: white;
+    color: $bg-light;
+  }
+  @media (min-width: $desktop-widths) {
+    background-color: white;
+    color: $bg-light;
+  }
+}
+.main-nav__link--active:hover {
+  @media (min-width: $tablet-widths) {
+    background-color: white;
+    color: $menu-active;
+  }
+  @media (min-width: $desktop-widths) {
+    background-color: white;
+    color: $menu-active;
+  }
+}

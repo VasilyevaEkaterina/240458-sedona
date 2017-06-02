@@ -1,0 +1,227 @@
+.video {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 105px;
+  padding-top: 17px;
+  @media (min-width: $tablet-widths) {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 30px;
+    margin-bottom: 95px;
+  }
+}
+.video__title {
+  @include title;
+  padding-bottom: 10px;
+  @media (min-width: $tablet-widths) {
+
+  }
+  @media (min-width: $desktop-widths) {
+    padding-bottom: 5px;
+
+  }
+}
+.video__title--large {
+  @media (min-width: $tablet-widths) {
+    font-size: 30px;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.video__text {
+  @include text;
+  color: $dark-grey;
+  line-height: 24px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  @media (min-width: $tablet-widths) {
+    padding-left: 115px;
+    padding-right: 115px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+}
+.video__player {
+  background-image: url("/img/video-mobile@1x.jpg");
+  background-size: cover;
+  height: 200px;
+  background-repeat: no-repeat;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("/img/video-mobile@2x.jpg");
+  }
+  @media (min-width: $tablet-widths) {
+    background-image: url("/img/video-tablet@1x.jpg");
+    position: relative;
+    height: 500px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/video-tablet@2x.jpg");
+    }
+  }
+  @media (min-width: $desktop-widths) {
+    width: 800px;
+    background-image: url("/img/video-desktop@1x.jpg");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/video-desktop@2x.jpg");
+    }
+  }
+}
+.video__controls {
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translateY(-50%);
+  @media (min-width: $tablet-widths) {
+    transform: translateY(0);
+    position: absolute;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.video__scale {
+  background-color: rgba($color, 0.6);
+  padding: 20px 20px;
+  @media (min-width: $tablet-widths) {
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    position: relative;
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+    width: 100%;
+  }
+}
+.video__bar {
+  width: 235px;
+  height: 2px;
+  background-color: rgba($color-light, 0.2);
+  @media (min-width: $tablet-widths) {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    width: 390px;
+  }
+  @media (min-width: $desktop-widths) {
+    width: 540px;
+  }
+}
+.video__toggle {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: white;
+  top: 18px;
+  left: 80px;
+  z-index: 100;
+  @media (min-width: $tablet-widths) {
+    top: -2px;
+    left: 125px;
+  }
+  @media (min-width: $desktop-widths) {
+  }
+
+}
+.video__panel {
+  background-color: $bg-light;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: $tablet-widths) {
+    position: absolute;
+    background-color: rgba($color, 0);
+    width: 648px;
+    bottom: 11px;
+    padding-left: 28px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+  }
+  @media (min-width: $desktop-widths) {
+    width: 800px;
+  }
+}
+.video__repeat {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background: none;
+  outline: none;
+  border: 0;
+  margin-right: 90px;
+  fill: #5c6870;
+  @media (min-width: $tablet-widths) {
+    fill: #ffffff;
+    left: 0;
+    margin-right: 440px;
+  }
+  @media (min-width: $desktop-widths) {
+    margin-right: 550px;
+  }
+}
+.video__repeat:hover {
+  fill: black;
+}
+.video__repeat:active {
+  fill: rgba(0,0,0,0.3);
+}
+.video__сс {
+  font-size: 0;
+  width: 35px;
+  height: 20px;
+  background: none;
+  outline: none;
+  border: 0;
+  fill: #5c6870;
+  @media (min-width: $tablet-widths) {
+    fill: #ffffff;
+    left: 0;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.video__cc:hover {
+  fill: black;
+}
+.video__cc:active {
+  fill: rgba(0,0,0,0.3);
+}
+.video__fullscreen {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background: none;
+  outline: none;
+  border: 0;
+  fill: #5c6870;
+  padding-right: 20px;
+  @media (min-width: $tablet-widths) {
+    fill: #ffffff;
+    left: 0;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.video__fullscreen:hover {
+  fill: black;
+}
+.video__fullscreen:active {
+  fill: rgba(0,0,0,0.3);
+}
