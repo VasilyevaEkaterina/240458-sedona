@@ -1,0 +1,257 @@
+.advantage {
+  @media (min-width: $tablet-widths) {
+    width: 33.666666%;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.advantage--reverse {
+  @media (min-width: $tablet-widths) {
+    order: 2;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.advantage__title {
+  @include title;
+  @media (min-width: $tablet-widths) {
+    padding-top: 30px;
+    font-size: 21px;
+  }
+  @media (min-width: $desktop-widths) {
+    text-align: center;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+.advantage__title--blue {
+  @media (min-width: $tablet-widths) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+.advantage__title--grey {
+  @media (min-width: $tablet-widths) {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 45px;
+    margin: 0;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+.advantage__description {
+  @include text;
+  @media (min-width: $tablet-widths) {
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 0;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+.advantage__description--grey {
+  padding-left: 25px;
+  padding-right: 25px;
+  @media (min-width: $tablet-widths) {
+    word-wrap: break-word;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-top: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+.advantage__number {
+  @include text;
+  text-align: center;
+}
+.advantage--blue {
+  background-color: $bg-color;
+  color: $color-light;
+  text-align: center;
+  padding: 25px;
+  padding-top: 20px;
+  @media (min-width: $tablet-widths) {
+    padding: 0;
+    width: 33.666666%;
+
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.advantage--first {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  @media (min-width: $tablet-widths) {
+    padding-top: 0;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.advantage--grey {
+  text-transform: uppercase;
+  border-bottom: 1px solid #E4E4E4;
+  text-align: center;
+  padding: 10px 15px;
+  @media (min-width: $tablet-widths) {
+    padding: 0;
+    width: 33.666666%;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-bottom: 35px;
+  }
+}
+.advantage--image {
+  padding: 0;
+  background-color: $color-light;
+  margin: 0;
+  width: auto;
+  @media (min-width: $tablet-widths) {
+    width: 66.666666%;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.advantage--tips {
+  text-align: left;
+  padding-left: 70px;
+  position: relative;
+  margin-top: 33px;
+  padding-right: 20px;
+  @media (min-width: $tablet-widths) {
+    padding: 0;
+    width: 33.333333%;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-bottom: 70px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.advantage__picture {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.advantage--tips:last-child {
+  padding-bottom: 13px;
+  @media (min-width: $tablet-widths) {
+
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.advantage--grey:last-child {
+  padding-bottom: 12px;
+  border: 0;
+}
+.advantage--tips-home::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 36px;
+  background-image: url("/img/icon-house.svg");
+  background-size: 40px 36px;
+  background-repeat: no-repeat;
+  top: -7px;
+  left: 20px;
+  @media (min-width: $tablet-widths) {
+    top: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 75px;
+    background-size: 75px 75px;
+  }
+  @media (min-width: $desktop-widths) {
+    width: 77px;
+    height: 77px;
+  }
+}
+.advantage--tips-gift::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 36px;
+  background-image: url("/img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 36px;
+  top: -7px;
+  left: 20px;
+  @media (min-width: $tablet-widths) {
+    top: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 75px;
+    background-size: 70px 75px;
+  }
+  @media (min-width: $desktop-widths) {
+    width: 80px;
+    height: 75px;
+  }
+}
+.advantage--tips-burger::before {
+  position: absolute;
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-image: url("/img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
+  top: -7px;
+  left: 20px;
+  @media (min-width: $tablet-widths) {
+    top: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 75px;
+    background-size: 70px 75px;
+  }
+  @media (min-width: $desktop-widths) {
+    width: 70px;
+    height: 70px;
+  }
+}
+.advantage--tips-gift {
+  @media (min-width: $tablet-widths) {
+    order: 3;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.advantage--tips-burger {
+  @media (min-width: $tablet-widths) {
+    order: 2;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}

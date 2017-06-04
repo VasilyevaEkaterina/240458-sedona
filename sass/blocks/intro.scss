@@ -1,0 +1,87 @@
+.intro {
+  display: block;
+  text-align: center;
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  position: relative;
+  background-color: $bg-color;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("/img/bg-back-mobile@2x.jpg");
+  }
+  @media (min-width: $tablet-widths) {
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    padding-bottom: 80px;
+    padding-top: 95px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/bg-back-tablet@2x.jpg");
+    }
+  }
+  @media (min-width: $desktop-widths) {
+    padding-bottom: 90px;
+    background-image: url("/img/bg-back-desktop@1x.jpg");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/bg-back-desktop@2x.jpg");
+    }
+  }
+}
+.intro--index {
+  padding-top: 85px;
+  padding-bottom: 80px;
+  @media (min-width: $tablet-widths) {
+    padding-top: 80px;
+    padding-bottom: 85px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-top: 78px;
+    padding-bottom: 78px;
+  }
+}
+.intro__text {
+  width: 230px;
+  height: 40px;
+  padding-bottom: 35px;
+  @media (min-width: $tablet-widths) {
+    width: 460px;
+    height: 77px;
+    padding-bottom: 30px;
+  }
+  @media (min-width: $desktop-widths) {
+  }
+}
+.intro__text--index {
+  width: 280px;
+  height: 215px;
+  @media (min-width: $tablet-widths) {
+    width: 460px;
+    height: 345px;
+  }
+  @media (min-width: $desktop-widths) {
+    width: 470px;
+    height: 355px;
+  }
+}
+
+.intro::after {
+  position: absolute;
+  content: "";
+  background-image: url("/img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (min-width: $tablet-widths) {
+    background-image: url("/img/bg-intro-triangle-tablet.svg");
+    width: 100%;
+    height: 57px;
+    bottom: 0;
+  }
+  @media (min-width: $desktop-widths) {
+    background-image: url("/img/bg-intro-triangle-desktop.svg");
+  }
+}
