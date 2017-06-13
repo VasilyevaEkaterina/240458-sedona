@@ -76,6 +76,23 @@
     padding-right: 80px;
   }
 }
+.advantage__description--long {
+  @media (min-width: $tablet-widths) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.advantage__word {
+  @media (min-width: $tablet-widths) {
+    display: block;
+  }
+  @media (min-width: $desktop-widths) {
+  }
+}
 .advantage__number {
   @include text;
   text-align: center;
