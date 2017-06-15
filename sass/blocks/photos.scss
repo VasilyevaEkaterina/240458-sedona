@@ -44,18 +44,14 @@
     height: 270px;
   }
   @media (min-width: $desktop-widths) {
-
   }
-
 }
 .photos__photo--first {
   @media (min-width: $tablet-widths) {
     height: 400px;
   }
   @media (min-width: $desktop-widths) {
-
   }
-
 }
 .photos__link {
   display: block;
@@ -84,7 +80,6 @@
 }
 .photos__description-text {
   @media (min-width: $tablet-widths) {
-
   }
   @media (min-width: $desktop-widths) {
     padding-left: 30px;
@@ -104,7 +99,6 @@
   color: $dark-grey;
   padding-bottom: 5px;
   @media (min-width: $tablet-widths) {
-
   }
   @media (min-width: $desktop-widths) {
     color: $color-light;
@@ -133,7 +127,6 @@
   background-repeat: no-repeat;
   left: 0;
   @media (min-width: $tablet-widths) {
-
   }
   @media (min-width: $desktop-widths) {
     background-image: url("/img/icon-like-white.svg");

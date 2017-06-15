@@ -10,10 +10,8 @@
   box-shadow: 0 1px 1px 1px $bg-light;
   width: 320px;
   @media (min-width: $tablet-widths) {
-    width: 50%;
   }
   @media (min-width: $desktop-widths) {
-    width: 33.666666%;
   }
 
 }
@@ -21,33 +19,66 @@
   z-index: 1000;
   top: 50px;
   @media (min-width: $tablet-widths) {
-    width: 50%;
+    width: 400px;
   }
   @media (min-width: $desktop-widths) {
-    width: 33.666666%;
   }
 }
 .popup--accept {
   z-index: 2000;
   top: 400px;
+  padding-bottom: 0;
   @media (min-width: $tablet-widths) {
-    width: 100%;
+    width: 645px;
   }
   @media (min-width: $desktop-widths) {
-    width: 50%;
   }
 }
 .popup__title {
   @include title;
   text-align: center;
   text-transform: uppercase;
+  @media (min-width: $tablet-widths) {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 .popup__text {
   @include text;
-  padding: 35px;
   text-align: center;
-  padding: 35px 50px;
+  padding: 35px 45px;
   text-transform: uppercase;
+  @media (min-width: $tablet-widths) {
+    padding-top: 0px;
+  }
+  @media (min-width: $desktop-widths) {
+  }
+}
+.popup__text--accept {
+  @include text;
+  text-align: center;
+  padding: 35px 45px;
+  text-transform: uppercase;
+  @media (min-width: $tablet-widths) {
+  }
+  @media (min-width: $desktop-widths) {
+  }
+}
+.popup__text--sentence {
+  display: block;
+  padding: 0;
+}
+.popup__button {
+  background-color: $bg-light;
+  width: 100%;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 .popup__btn {
   @include title;
@@ -66,12 +97,6 @@
   padding: 16px 0;
   box-sizing: border-box;
   cursor: pointer;
-  @media (min-width: $tablet-widths) {
-    width: 285px;
-  }
-  @media (min-width: $desktop-widths) {
-    width: 270px;
-  }
 }
 .popup__btn:hover {
   background-color: #72a6c5;
@@ -80,6 +105,11 @@
   background-color: #5496bd;
   color: rgba($color-light,0.3)
 }
-.popup__btn--decline {
-  width: 180px;
+.popup__btn--accept {
+  @media (min-width: $tablet-widths) {
+    width: 400px;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
 }

@@ -3,7 +3,6 @@
     width: 33.666666%;
   }
   @media (min-width: $desktop-widths) {
-
   }
 }
 .advantage--reverse {
@@ -11,11 +10,12 @@
     order: 2;
   }
   @media (min-width: $desktop-widths) {
-
   }
 }
 .advantage__title {
   @include title;
+  padding: 0;
+  margin: 0;
   @media (min-width: $tablet-widths) {
     padding-top: 30px;
     font-size: 21px;
@@ -27,9 +27,11 @@
   }
 }
 .advantage__title--blue {
+  padding-bottom: 10px;
   @media (min-width: $tablet-widths) {
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 45px;
   }
   @media (min-width: $desktop-widths) {
     padding-left: 125px;
@@ -37,6 +39,7 @@
   }
 }
 .advantage__title--grey {
+  padding-bottom: 10px;
   @media (min-width: $tablet-widths) {
     padding-left: 50px;
     padding-right: 50px;
@@ -49,6 +52,15 @@
     padding-right: 130px;
   }
 }
+.advantage__title--word {
+  @media (min-width: $tablet-widths) {
+    display: block;
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
 .advantage__description {
   @include text;
   @media (min-width: $tablet-widths) {
@@ -57,23 +69,92 @@
     padding-top: 0;
   }
   @media (min-width: $desktop-widths) {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 .advantage__description--grey {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
   @media (min-width: $tablet-widths) {
-    word-wrap: break-word;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 32px;
+    padding-top: 5px;
   }
   @media (min-width: $desktop-widths) {
     padding-top: 5px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+.advantage__description--grey:last-child {
+  margin-bottom: 12px;
+  @media (min-width: $tablet-widths) {
+    margin-bottom: 0;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.advantage__description--sentence-one {
+  @media (min-width: $tablet-widths) {
+    display: block;
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+    display: inline;
+  }
+}
+.advantage__description--sentence-two {
+  @media (min-width: $tablet-widths) {
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+    display: inline;
+    padding: 0;
+  }
+}
+.advantage__description--sentence-three {
+  display: block;
+  @media (min-width: $tablet-widths) {
+    display: inline;
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+  }
+}
+.advantage__description--sentence-four {
+  @media (min-width: $tablet-widths) {
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+  }
+}
+.advantage__description--sentence-five {
+  @media (min-width: $tablet-widths) {
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+    display: block;
+  }
+}
+.advantage__description--blue {
+  @media (min-width: $tablet-widths) {
+    padding-top: 8px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+.advantage__description--first {
+  @media (min-width: $tablet-widths) {
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 .advantage__description--long {
@@ -86,9 +167,16 @@
     padding-right: 50px;
   }
 }
-.advantage__word {
+.advantage__description--word {
   @media (min-width: $tablet-widths) {
     display: block;
+  }
+  @media (min-width: $desktop-widths) {
+  }
+}
+.advantage__description--tips {
+  @media (min-width: $tablet-widths) {
+    padding-top: 5px;
   }
   @media (min-width: $desktop-widths) {
   }
@@ -102,24 +190,20 @@
   color: $color-light;
   text-align: center;
   padding: 25px;
-  padding-top: 20px;
+  padding-top: 40px;
   @media (min-width: $tablet-widths) {
     padding: 0;
     width: 33.666666%;
-
   }
   @media (min-width: $desktop-widths) {
-
   }
 }
 .advantage--first {
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 55px;
   @media (min-width: $tablet-widths) {
     padding-top: 0;
   }
   @media (min-width: $desktop-widths) {
-
   }
 }
 .advantage--grey {
@@ -127,6 +211,7 @@
   border-bottom: 1px solid #E4E4E4;
   text-align: center;
   padding: 10px 15px;
+  padding-top: 26px;
   @media (min-width: $tablet-widths) {
     padding: 0;
     width: 33.666666%;
@@ -144,26 +229,71 @@
     width: 66.666666%;
   }
   @media (min-width: $desktop-widths) {
-
   }
 }
 .advantage--tips {
   text-align: left;
   padding-left: 70px;
   position: relative;
-  margin-top: 33px;
+  margin-top: 35px;
   padding-right: 20px;
   @media (min-width: $tablet-widths) {
     padding: 0;
     width: 33.333333%;
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    margin-top: 30px;
   }
   @media (min-width: $desktop-widths) {
     padding-bottom: 70px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.advantage__description--food {
+  @media (min-width: $tablet-widths) {
+    display: block;
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+
+  }
+}
+.advantage__description--first-sentence {
+  @media (min-width: $tablet-widths) {
+    display: block;
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+    display: block;
+    padding: 0;
+  }
+}
+.advantage__description--gift {
+  @media (min-width: $tablet-widths) {
+    display: block;
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+  }
+}
+.advantage__description--middle-sentence {
+  @media (min-width: $tablet-widths) {
+    display: block;
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+    display: inline;
+    padding: 0;
+  }
+}
+.advantage__description--last-sentence {
+  @media (min-width: $tablet-widths) {
+    display: block;
+    padding: 0;
+  }
+  @media (min-width: $desktop-widths) {
+    display: inline;
+    padding: 0;
   }
 }
 .advantage__picture {
@@ -171,13 +301,12 @@
   padding: 0;
   margin: 0;
 }
-.advantage--tips:last-child {
-  padding-bottom: 13px;
+.advantage--tips-burger {
+  padding-bottom: 25px;
   @media (min-width: $tablet-widths) {
-
+   padding-bottom: 0;
   }
   @media (min-width: $desktop-widths) {
-
   }
 }
 .advantage--grey:last-child {
@@ -195,8 +324,7 @@
   top: -7px;
   left: 20px;
   @media (min-width: $tablet-widths) {
-    top: 30px;
-    bottom: 0;
+    top: -70px;
     left: 50%;
     transform: translateX(-50%);
     width: 75px;
@@ -216,11 +344,10 @@
   background-image: url("/img/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: 32px 36px;
-  top: -7px;
-  left: 20px;
+  top: -10px;
+  left: 25px;
   @media (min-width: $tablet-widths) {
-    top: 30px;
-    bottom: 0;
+    top: -70px;
     left: 50%;
     transform: translateX(-50%);
     width: 70px;
@@ -228,6 +355,7 @@
     background-size: 70px 75px;
   }
   @media (min-width: $desktop-widths) {
+    top: -73px;
     width: 80px;
     height: 75px;
   }
@@ -240,11 +368,10 @@
   background-image: url("/img/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: 37px 37px;
-  top: -7px;
+  top: -6px;
   left: 20px;
   @media (min-width: $tablet-widths) {
-    top: 30px;
-    bottom: 0;
+    top: -70px;
     left: 50%;
     transform: translateX(-50%);
     width: 70px;
@@ -257,18 +384,21 @@
   }
 }
 .advantage--tips-gift {
+  padding-top: 0;
+  margin-top: 28px;
   @media (min-width: $tablet-widths) {
     order: 3;
+
   }
   @media (min-width: $desktop-widths) {
 
   }
 }
 .advantage--tips-burger {
+  margin-top: 27px;
   @media (min-width: $tablet-widths) {
     order: 2;
   }
   @media (min-width: $desktop-widths) {
-
   }
 }

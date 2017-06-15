@@ -13,13 +13,17 @@
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и Видео</a></li>
             <li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма Отзыва</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Html Academy</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">Html Academy</a></li>
           </ul>
         </nav>
         <button class="page-header__toggle" type="button">Открыть меню</button>
         <div class="page-header__logo">
           <a class="page-header__link">
-            <img class="page-header__image" src="img/logo-sedona-mobile.svg" alt="logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__picture" src="img/logo-sedona-mobile.svg" alt="logo">
+            </picture>
           </a>
         </div>
       </header>
@@ -36,41 +40,49 @@
             <div class="advantage advantage--blue advantage--first">
               <h2 class="advantage__title advantage__title--blue">Настоящий городок</h2>
               <div class="advantage__number">&#8212;№1&#8212;</div>
-              <p class="advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="advantage__description advantage__description--blue advantage__description--first">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantage advantage--image">
-              <img class="advantage__picture" src="img/photo-city-mobile@1x.jpg" alt="photo-city">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img class="advantage__picture" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="photo-city">
+              </picture>
             </div>
           </div>
-          <div class="advantages__row">
+          <div class="advantages__row advantages__row--tips">
             <div class="advantage advantage--tips advantage--tips-home">
               <h2 class="advantage__title">Жилье</h2>
-              <p class="advantage__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <p class="advantage__description advantage__description--tips">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             <div class="advantage advantage--tips advantage--tips-gift">
               <h2 class="advantage__title">Сувениры</h2>
-              <p class="advantage__description">Не только китайского, но и местного производства!</p>
+              <p class="advantage__description advantage__description--tips"><span class="advantage__description advantage__description--gift">Не только китайского,</span><span class="advantage__description advantage__description--first-sentence"><span class="advantage__description advantage__description--middle-sentence">но и местного</span><span class="advantage__description advantage__description--last-sentence"> производства!</span></span></p>
             </div>
             <div class="advantage advantage--tips advantage--tips-burger">
               <h2 class="advantage__title">Еда</h2>
-              <p class="advantage__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!"</p>
+              <p class="advantage__description advantage__description--tips">Всегда заказывайте фирменный бургер,<span class="advantage__description advantage__description--food">вы не разочаруетесь!</span></p>
             </div>
           </div>
           <div class="advantages__row advantages__row--blue">
             <div class="advantage advantage--blue advantage--reverse">
-              <h2 class="advantage__title advantage__title--blue">Там есть мост дьявола</h2>
+              <h2 class="advantage__title advantage__title--blue">Там есть <span class="advantage__title advantage__title--word">мост дьявола</span></h2>
               <div class="advantage__number">&#8212;№2&#8212;</div>
-              <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="advantage__description advantage__description--blue">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantage advantage--image">
-              <img class="advantage__picture" src="img/photo-bridge-mobile@1x.jpg" alt="photo-bridge">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="advantage__picture" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="photo-bridge">
+              </picture>
             </div>
           </div>
           <div class="advantages__row advantages__row--grey">
             <div class="advantage advantage--grey">
               <h2 class="advantage__title advantage__title--grey">Небольшая площадь</h2>
               <div class="advantage__number">&#8212;№3&#8212;</div>
-              <p class="advantage__description advantage__description--grey advantage__description--long">Все интересные места находятся очень <span class="advantage__word">близко</span></p>
+              <p class="advantage__description advantage__description--grey advantage__description--long">Все интересные места находятся очень <span class="advantage__description advantage__description--word">близко</span></p>
             </div>
             <div class="advantage advantage--grey">
               <h2 class="advantage__title advantage__title--grey">Красивая дорога</h2>
@@ -80,14 +92,14 @@
             <div class="advantage advantage--grey">
               <h2 class="advantage__title advantage__title--grey">Мало туристов</h2>
               <div class="advantage__number">&#8212;№5&#8212;</div>
-              <p class="advantage__description advantage__description--grey">Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="advantage__description advantage__description--grey"><span class="advantage__description advantage__description--sentence-one">Большинство едет в </span><span class="advantage__description advantage__description--sentence-two">Гранд Каньон</span> <span class="advantage__description advantage__description--sentence-three"><span class="advantage__description advantage__description--sentence-four"> и</span><span class="advantage__description advantage__description--sentence-five"> толпится там</span></span></p>
             </div>
           </div>
         </div>
         <div class="contacts">
           <h3 class="contacts__title contacts__title--large">Заинтересовались?</h3>
-          <p class="contacts__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="contacts__btn" href="#">Найти гостиницу</a>
+          <p class="contacts__text">Укажите предполагаемые даты поездки,<span class="contacts__text contacts__text--sentence">и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
+          <a class="contacts__btn" href="/hotels.html">Найти гостиницу</a>
           <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720574.7299777176!2d-111.93297915984496!3d35.22357582175112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2z0KTQu9Cw0LPRgdGC0LDRhNGELCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1491127453666"></iframe></div>
         </div>
       </main>
@@ -98,9 +110,9 @@
           <a class="social-btns__btn social-btns__btn--fb" href="#">fb</a>
           <a class="social-btns__btn social-btns__btn--youtube" href="#">youtube</a>
         </div>
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="page-footer__copyright-text">Разработано</span>
-          <svg class="page-footer__academy-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <svg class="page-footer__academy-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26" height="34" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
           <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
           </svg>
         </a>
