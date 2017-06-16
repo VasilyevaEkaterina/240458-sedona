@@ -2,13 +2,13 @@
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 27px;
   padding-bottom: 0px;
   @media (min-width: $tablet-widths) {
-    padding-left: 145px;
-    padding-right: 145px;
+    padding-left: 165px;
+    padding-right: 165px;
     padding-top: 55px;
     padding-bottom: 20px;
   }
@@ -80,6 +80,15 @@
   }
   @media (min-width: $desktop-widths) {
     margin-bottom: 18px;
+
+  }
+}
+.about__text--word {
+  display: block;
+  @media (min-width: $tablet-widths) {
+    display: inline;
+  }
+  @media (min-width: $desktop-widths) {
 
   }
 }
