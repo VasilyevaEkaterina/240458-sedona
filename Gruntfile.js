@@ -1,10 +1,7 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks("grunt-sass");
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
     sass: {
@@ -37,7 +34,7 @@ module.exports = function(grunt) {
           report: "gzip"
         },
         files: {
-          "build/css/style.min.css": ["css/style.css"]
+          "build/css/style.min.css": ["build/css/style.css"]
         }
       }
     },
@@ -63,7 +60,7 @@ module.exports = function(grunt) {
       },
       symbols: {
         files: {
-          "build/img/symbols.svg": ["img/icons/*.svg"]
+          "build/img/symbols.svg": ["img/*.svg"]
         }
       }
     },
@@ -72,7 +69,7 @@ module.exports = function(grunt) {
       symbols: {
         files: [{
           expand: true,
-          src: ["build/img/icons/*.svg"]
+          src: ["build/img/*.svg"]
         }]
       }
     },
@@ -80,10 +77,7 @@ module.exports = function(grunt) {
     browserSync: {
       server: {
         bsFiles: {
-          src: [
-            "*build.html",
-            "build/css/*.css"
-          ]
+          src: ["*build.html", "build/css/*.css"]
         },
         options: {
           server: "build/",
@@ -101,7 +95,6 @@ module.exports = function(grunt) {
         files: ["*.html"],
         tasks: ["copy:html"]
       },
-
       style: {
         files: ["sass/**/*.{scss,sass}"],
         tasks: ["sass", "postcss", "csso"]
@@ -109,7 +102,18 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      build: {},
+      build: {
+        files: [{
+          expand: true,
+          src: [
+            "fonts/**/*/.{woff,woff2}",
+            "img/**",
+            "js/**",
+            "*.html"
+          ],
+          dest: "build"
+        }]
+      },
       html: {
         files: [{
           expand: true,
@@ -117,6 +121,10 @@ module.exports = function(grunt) {
           dest: "build"
         }]
       }
+    },
+
+    clean: {
+      build: ["build"]
     }
 
   });
