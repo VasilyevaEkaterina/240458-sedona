@@ -67,6 +67,7 @@
   background-repeat: no-repeat;
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("/img/video-mobile@2x.jpg");
+    background-position: center;
   }
   @media (min-width: $tablet-widths) {
     background-image: url("/img/video-tablet@1x.jpg");
@@ -150,6 +151,7 @@
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
   @media (min-width: $tablet-widths) {
     position: absolute;
     background-color: rgba($color, 0);
@@ -173,9 +175,9 @@
   border: 0;
   margin-right: 90px;
   fill: #5c6870;
+  cursor: pointer;
   @media (min-width: $tablet-widths) {
     fill: #ffffff;
-    left: 0;
     margin-right: 445px;
   }
   @media (min-width: $desktop-widths) {
@@ -188,7 +190,8 @@
 .video__repeat:active {
   fill: rgba(0,0,0,0.3);
 }
-.video__сс {
+.video__cc {
+  cursor: pointer;
   font-size: 0;
   width: 35px;
   height: 20px;
@@ -211,6 +214,7 @@
   fill: rgba(0,0,0,0.3);
 }
 .video__fullscreen {
+  cursor: pointer;
   font-size: 0;
   width: 20px;
   height: 20px;

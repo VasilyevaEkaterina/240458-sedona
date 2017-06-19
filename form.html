@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="picturefill.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -93,18 +94,18 @@
                 <label for="sights-2" class="form__label form__label--checkbox">Слайд-парк</label>
               </div>
               <div class="form__field form__field--checkbox">
-                <input type="checkbox" name="sights-3" id="sights-3" class="form__input form__input--checkbox">
+                <input type="checkbox" name="sights-3" id="sights-3" checked class="form__input form__input--checkbox">
                 <label for="sights-3" class="form__label form__label--checkbox">Гора-Колокол</label>
               </div>
               <div class="form__field form__field--checkbox form__field--checkbox-order">
-                <input type="checkbox" name="sights-4" id="sights-4" checked class="form__input form__input--checkbox">
+                <input type="checkbox" name="sights-4" id="sights-4" class="form__input form__input--checkbox">
                 <label for="sights-4" class="form__label form__label--checkbox">Красные скалы</label>
               </div>
             </div>
           </div>
           <div class="form__block form__block--feedback">
             <h2 class="form__title form__title--line form__title--feedback">Опишите свои эмоции:</h2>
-            <textarea name="feedback" id="feedback" class="form__feedback">Опишите подробно все свои восторги</textarea>
+            <textarea name="feedback" id="feedback" class="form__feedback" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
           <div class="form__button">
             <button type="submit" class="form__btn">Отправить отзыв</button>

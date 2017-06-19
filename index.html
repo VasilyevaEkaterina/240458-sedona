@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="picturefill.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -28,18 +29,18 @@
         </div>
       </header>
       <main class="main">
-        <div class="intro intro--index"><img class="intro__text--index" src="img/text-sedona-index.svg" width="460" height="365" alt="sedona"></div>
+        <div class="intro intro--index">
+          <img class="intro__text--index" src="img/text-sedona-index.svg" width="460" height="365" alt="sedona">
+        </div>
         <div class="about about--index">
-          <h1 class="about__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="about__text">
-            Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
-          </p>
+          <h1 class="about__title">Седона - небольшой городок в Аризоне,<span class="about__wrap">заслуживающий большего!</span></h1>
+          <p class="about__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
         </div>
         <div class="advantages">
           <div class="advantages__row advantages__row--blue">
             <div class="advantage advantage--blue advantage--first">
               <h2 class="advantage__title advantage__title--blue">Настоящий городок</h2>
-              <div class="advantage__number">&#8212;№1&#8212;</div>
+              <div class="advantage__number">№1</div>
               <p class="advantage__description advantage__description--blue advantage__description--first">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantage advantage--image">
@@ -57,17 +58,17 @@
             </div>
             <div class="advantage advantage--tips advantage--tips-gift">
               <h2 class="advantage__title">Сувениры</h2>
-              <p class="advantage__description advantage__description--tips"><span class="advantage__description advantage__description--gift">Не только китайского,</span><span class="advantage__description advantage__description--first-sentence"><span class="advantage__description advantage__description--middle-sentence">но и местного</span><span class="advantage__description advantage__description--last-sentence"> производства!</span></span></p>
+              <p class="advantage__description advantage__description--tips">Не только китайского,<span class="advantage__desktop-wrap"> но и местного производства!</span></p>
             </div>
             <div class="advantage advantage--tips advantage--tips-burger">
               <h2 class="advantage__title">Еда</h2>
-              <p class="advantage__description advantage__description--tips">Всегда заказывайте фирменный бургер,<span class="advantage__description advantage__description--food">вы не разочаруетесь!</span></p>
+              <p class="advantage__description advantage__description--tips">Всегда заказывайте фирменный бургер,<span class="advantage__tablet-wrap"> вы не разочаруетесь!</span></p>
             </div>
           </div>
           <div class="advantages__row advantages__row--blue">
             <div class="advantage advantage--blue advantage--reverse">
-              <h2 class="advantage__title advantage__title--blue">Там есть <span class="advantage__title advantage__title--word">мост дьявола</span></h2>
-              <div class="advantage__number">&#8212;№2&#8212;</div>
+              <h2 class="advantage__title advantage__title--blue">Там есть <span class="advantage__title-wrap">мост дьявола</span></h2>
+              <div class="advantage__number">№2</div>
               <p class="advantage__description advantage__description--blue">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantage advantage--image">
@@ -81,24 +82,24 @@
           <div class="advantages__row advantages__row--grey">
             <div class="advantage advantage--grey">
               <h2 class="advantage__title advantage__title--grey">Небольшая площадь</h2>
-              <div class="advantage__number">&#8212;№3&#8212;</div>
-              <p class="advantage__description advantage__description--grey advantage__description--long">Все интересные места находятся очень <span class="advantage__description advantage__description--word">близко</span></p>
+              <div class="advantage__number">№3</div>
+              <p class="advantage__description advantage__description--grey advantage__description--long">Все интересные места находятся очень <span class="advantage__description-tablet">близко</span></p>
             </div>
             <div class="advantage advantage--grey">
               <h2 class="advantage__title advantage__title--grey">Красивая дорога</h2>
-              <div class="advantage__number">&#8212;№4&#8212;</div>
+              <div class="advantage__number">№4</div>
               <p class="advantage__description advantage__description--grey">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
             <div class="advantage advantage--grey">
               <h2 class="advantage__title advantage__title--grey">Мало туристов</h2>
-              <div class="advantage__number">&#8212;№5&#8212;</div>
-              <p class="advantage__description advantage__description--grey"><span class="advantage__description advantage__description--sentence-one">Большинство едет в </span><span class="advantage__description advantage__description--sentence-two">Гранд Каньон</span> <span class="advantage__description advantage__description--sentence-three"><span class="advantage__description advantage__description--sentence-four"> и</span><span class="advantage__description advantage__description--sentence-five"> толпится там</span></span></p>
+              <div class="advantage__number">№5</div>
+              <p class="advantage__description advantage__description--grey">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </div>
         </div>
         <div class="contacts">
           <h3 class="contacts__title contacts__title--large">Заинтересовались?</h3>
-          <p class="contacts__text">Укажите предполагаемые даты поездки,<span class="contacts__text contacts__text--sentence">и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
+          <p class="contacts__text">Укажите предполагаемые даты поездки,<span class="contacts__tablet-wrap">и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
           <a class="contacts__btn" href="/hotels.html">Найти гостиницу</a>
           <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720574.7299777176!2d-111.93297915984496!3d35.22357582175112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2z0KTQu9Cw0LPRgdGC0LDRhNGELCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1491127453666"></iframe></div>
         </div>
