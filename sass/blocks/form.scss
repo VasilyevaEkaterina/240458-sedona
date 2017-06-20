@@ -171,9 +171,6 @@
     padding-top: 0;
     padding-bottom: 95px;
   }
-  @media (min-width: $desktop-widths) {
-
-  }
 }
 .form__block--name {
   border-top: 1px solid #E4E4E4;
@@ -314,8 +311,6 @@
     flex-wrap: wrap;
     padding-bottom: 0;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .form__field--phone {
   padding-top: 18px;
@@ -352,8 +347,6 @@
   }
 }
 .form__field--checkbox:last-child {
-  @media (min-width: $tablet-widths) {
-  }
   @media (min-width: $desktop-widths) {
     margin-right: 5px;
   }
@@ -361,8 +354,6 @@
 .form__field--checkbox-order {
   @media (min-width: $tablet-widths) {
     order: 2;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .form__field--name {
@@ -373,8 +364,6 @@
     padding-left: 30px;
     padding-bottom: 28px;
     margin-bottom: 0;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .form__field--name:last-child {
@@ -414,10 +403,6 @@
   }
   &--name {
     flex-grow: 1;
-    @media (min-width: $tablet-widths) {
-    }
-    @media (min-width: $desktop-widths) {
-    }
   }
 }
 .form__input:hover {
@@ -474,8 +459,6 @@
   @media (min-width: $tablet-widths) {
     top: -15px;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .form__input--radio + .form__label--radio:hover::before {
   position: absolute;
@@ -489,8 +472,6 @@
   top: 20px;
   @media (min-width: $tablet-widths) {
     top: -15px;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .form__input--radio + .form__label--radio:focus::before {
@@ -506,8 +487,6 @@
   @media (min-width: $tablet-widths) {
     top: -15px;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .form__input--radio:checked + .form__label--radio::after {
   position: absolute;
@@ -521,8 +500,6 @@
   top: 35px;
   @media (min-width: $tablet-widths) {
     top: 0;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .form__input--radio:checked + .form__label--radio:focus::after {
@@ -538,8 +515,6 @@
   top: 35px;
   @media (min-width: $tablet-widths) {
     top: 0;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .form input[type="checkbox"] {
@@ -563,8 +538,6 @@
   @media (min-width: $tablet-widths) {
     top: 0;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .form__input--checkbox + .form__label--checkbox:hover::before {
   position: absolute;
@@ -579,8 +552,6 @@
   @media (min-width: $tablet-widths) {
     top: 0;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .form__input--checkbox + .form__label--checkbox:focus::before {
   position: absolute;
@@ -594,8 +565,6 @@
   top: 20px;
   @media (min-width: $tablet-widths) {
     top: 0;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .form__input--checkbox:checked + .form__label--checkbox::after {
@@ -612,8 +581,6 @@
   background-size: contain;
   @media (min-width: $tablet-widths) {
     top: 15px;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .form__input--checkbox:checked + .form__label--checkbox:focus::after {
@@ -632,8 +599,6 @@
   @media (min-width: $tablet-widths) {
     top: 15px;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .form__label {
   color: $dark-grey;
@@ -643,8 +608,6 @@
     display: block;
     padding-left: 20px;
     padding-bottom: 10px;
-    @media (min-width: $tablet-widths) {
-    }
     @media (min-width: $desktop-widths) {
       padding: 0;
       padding-right: 20px;
@@ -655,8 +618,6 @@
     display: block;
     padding-left: 20px;
     padding-bottom: 10px;
-    @media (min-width: $tablet-widths) {
-    }
     @media (min-width: $desktop-widths) {
       padding-right: 20px;
       padding-left: 0;
@@ -672,8 +633,6 @@
     @media (min-width: $tablet-widths) {
       padding-top: 0;
     }
-    @media (min-width: $desktop-widths) {
-    }
   }
   &--checkbox {
     text-transform: none;
@@ -685,9 +644,6 @@
     @media (min-width: $tablet-widths) {
       padding-top: 15px;
       padding-bottom: 20px;
-    }
-    @media (min-width: $desktop-widths) {
-
     }
   }
   &--name {

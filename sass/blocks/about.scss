@@ -65,17 +65,12 @@
     padding-left: 45px;
     padding-right: 45px;
   }
-  @media (min-width: $desktop-widths) {
-
-  }
 }
 .about__title--large {
   @media (min-width: $tablet-widths) {
     @include title;
     font-size: 30px;
     padding-bottom: 10px;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .about__text {
@@ -111,8 +106,5 @@
   transform: translateX(-50%);
   @media (min-width: $tablet-widths) {
     display: none;
-  }
-  @media (min-width: $desktop-widths) {
-
   }
 }

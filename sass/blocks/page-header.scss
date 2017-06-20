@@ -9,8 +9,6 @@
     box-shadow: 0 0 0 white;
     height: 0;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .page-header__logo a {
   position: absolute;
@@ -19,8 +17,6 @@
   transform: translateX(-50%);
   @media (min-width: $tablet-widths) {
     top: -60px;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .page-header__toggle {

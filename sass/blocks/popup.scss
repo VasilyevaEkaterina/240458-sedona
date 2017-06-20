@@ -9,19 +9,12 @@
   padding-bottom: 30px;
   box-shadow: 0 1px 1px 1px $bg-light;
   width: 320px;
-  @media (min-width: $tablet-widths) {
-  }
-  @media (min-width: $desktop-widths) {
-  }
-
 }
 .popup--decline {
   z-index: 1000;
   top: 50px;
   @media (min-width: $tablet-widths) {
     width: 400px;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .popup--accept {
@@ -30,8 +23,6 @@
   padding-bottom: 0;
   @media (min-width: $tablet-widths) {
     width: 645px;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .popup__title {
@@ -57,18 +48,12 @@
   @media (min-width: $tablet-widths) {
     padding-top: 0px;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .popup__text--accept {
   @include text;
   text-align: center;
   padding: 35px 45px;
   text-transform: uppercase;
-  @media (min-width: $tablet-widths) {
-  }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .popup__text--sentence {
   display: block;
@@ -108,8 +93,5 @@
 .popup__btn--accept {
   @media (min-width: $tablet-widths) {
     width: 400px;
-  }
-  @media (min-width: $desktop-widths) {
-
   }
 }

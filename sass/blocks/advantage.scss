@@ -2,14 +2,10 @@
   @media (min-width: $tablet-widths) {
     width: 33.666666%;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .advantage--reverse {
   @media (min-width: $tablet-widths) {
     order: 2;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .advantage__title {
@@ -78,8 +74,6 @@
   @media (min-width: $tablet-widths) {
     display: block;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .advantage__description--grey {
   padding-left: 20px;
@@ -102,9 +96,6 @@
   @media (min-width: $tablet-widths) {
     margin-bottom: 0;
   }
-  @media (min-width: $desktop-widths) {
-
-  }
 }
 .advantage__description--blue {
   @media (min-width: $tablet-widths) {
@@ -116,8 +107,6 @@
   }
 }
 .advantage__description--first {
-  @media (min-width: $tablet-widths) {
-  }
   @media (min-width: $desktop-widths) {
     padding-left: 55px;
     padding-right: 55px;
@@ -137,9 +126,6 @@
   @media (min-width: $tablet-widths) {
     display: block;
   }
-  @media (min-width: $desktop-widths) {
-
-  }
 }
 .advantage__description--word {
   @media (min-width: $tablet-widths) {
@@ -151,8 +137,6 @@
 .advantage__description--tips {
   @media (min-width: $tablet-widths) {
     padding-top: 5px;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .advantage__number {
@@ -175,15 +159,11 @@
     padding: 0;
     width: 33.666666%;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .advantage--first {
   padding-top: 55px;
   @media (min-width: $tablet-widths) {
     padding-top: 0;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .advantage--grey {
@@ -208,8 +188,6 @@
   @media (min-width: $tablet-widths) {
     width: 66.666666%;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .advantage--tips {
   text-align: left;
@@ -230,8 +208,6 @@
   }
 }
 .advantage__desktop-wrap {
-  @media (min-width: $tablet-widths) {
-  }
   @media (min-width: $desktop-widths) {
     display: block;
   }
@@ -245,8 +221,6 @@
   padding-bottom: 25px;
   @media (min-width: $tablet-widths) {
    padding-bottom: 0;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .advantage--grey:last-child {
@@ -328,17 +302,11 @@
   margin-top: 28px;
   @media (min-width: $tablet-widths) {
     order: 3;
-
-  }
-  @media (min-width: $desktop-widths) {
-
   }
 }
 .advantage--tips-burger {
   margin-top: 27px;
   @media (min-width: $tablet-widths) {
     order: 2;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }

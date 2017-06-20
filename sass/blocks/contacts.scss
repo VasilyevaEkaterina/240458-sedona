@@ -31,8 +31,6 @@
     display: block;
     padding: 0;
   }
-  @media (min-width: $desktop-widths) {
-  }
 }
 .contacts__title {
   @include title;
@@ -42,8 +40,6 @@
   @media (min-width: $tablet-widths) {
     @include title;
     font-size: 30px;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .contacts__btn {
