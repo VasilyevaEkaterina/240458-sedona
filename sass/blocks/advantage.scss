@@ -32,6 +32,7 @@
   @media (min-width: $desktop-widths) {
     padding-left: 125px;
     padding-right: 125px;
+    padding-top: 49px;
   }
 }
 .advantage__title--grey {
@@ -242,12 +243,8 @@
     left: 50%;
     transform: translateX(-50%);
     width: 75px;
-    height: 75px;
-    background-size: 75px 75px;
-  }
-  @media (min-width: $desktop-widths) {
-    width: 75px;
     height: 73px;
+    background-size: 75px 73px;
   }
 }
 .advantage--tips-gift::before {
@@ -264,14 +261,12 @@
     top: -70px;
     left: 50%;
     transform: translateX(-50%);
-    width: 70px;
-    height: 75px;
-    background-size: 70px 75px;
+    width: 63px;
+    height: 76px;
+    background-size: 63px 76px;
   }
   @media (min-width: $desktop-widths) {
     top: -73px;
-    width: 67px;
-    height: 75px;
   }
 }
 .advantage--tips-burger::before {
@@ -288,13 +283,9 @@
     top: -70px;
     left: 50%;
     transform: translateX(-50%);
-    width: 70px;
-    height: 75px;
-    background-size: 70px 75px;
-  }
-  @media (min-width: $desktop-widths) {
     width: 77px;
     height: 69px;
+    background-size: 77px 69px;
   }
 }
 .advantage--tips-gift {

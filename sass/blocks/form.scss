@@ -395,6 +395,7 @@
     display: block;
     width: 100%;
     box-sizing: border-box;
+    margin: 0;
   }
   &--e-mail {
     display: block;
@@ -672,6 +673,7 @@
   padding: 20px;
   font-weight: 700;
   font-size: 14px;
+  overflow: hidden;
   @media (min-width: $tablet-widths) {
     width: 960px;
     margin-top: 60px;
