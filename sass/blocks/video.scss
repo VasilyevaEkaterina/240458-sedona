@@ -45,8 +45,6 @@
     padding-bottom: 58px;
   }
   @media (min-width: $desktop-widths) {
-    padding-left: 190px;
-    padding-right: 190px;
     padding-bottom: 56px;
   }
 }
@@ -133,7 +131,7 @@
   left: 78px;
   z-index: 100;
   @media (min-width: $tablet-widths) {
-    top: -4px;
+    top: -3px;
     left: 116px;
   }
 }
@@ -159,7 +157,7 @@
 }
 .video__repeat {
   font-size: 0;
-  width: 20px;
+  width: 16px;
   height: 20px;
   background: none;
   outline: none;
@@ -184,7 +182,7 @@
 .video__cc {
   cursor: pointer;
   font-size: 0;
-  width: 35px;
+  width: 32px;
   height: 20px;
   background: none;
   outline: none;
