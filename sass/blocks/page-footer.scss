@@ -42,15 +42,15 @@
     padding-right: 0;
   }
 }
+.page-footer__copyright:hover .page-footer__academy-logo {
+  fill: $bg-color;
+}
+.page-footer__copyright:active .page-footer__academy-logo {
+  opacity: 0.3;
+}
 .page-footer__copyright-text {
   margin-right: 10px;
 }
 .page-footer__academy-logo  {
   fill: black;
-}
-.page-footer__academy-logo:hover {
-  fill: $bg-color;
-}
-.page-footer__academy-logo:active {
-  opacity: 0.3;
 }
