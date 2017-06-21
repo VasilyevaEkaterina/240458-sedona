@@ -5,17 +5,17 @@
   @media (min-width: $tablet-widths) {
     margin-left: 20px;
   }
-  @media (min-width: $desktop-widths) {
-
+  &--closed {
+    display: none;
+    @media (min-width: $tablet-widths) {
+      display: block;
+    }
   }
 }
 .main-nav__items {
   @media (min-width: $tablet-widths) {
     display: flex;
     justify-content: space-around;
-  }
-  @media (min-width: $desktop-widths) {
-
   }
 }
 .main-nav__item {
@@ -25,9 +25,6 @@
   box-shadow: 0 2px 5px 0 rgba($dark-grey,0.8);
   @media (min-width: $tablet-widths) {
     box-shadow: 0 0 0 0 white;
-  }
-  @media (min-width: $desktop-widths) {
-
   }
 }
 .main-nav__item:nth-child(2) {
@@ -67,8 +64,6 @@
     line-height: 26px;
     font-weight: 700;
     padding: 15px;
-  }
-  @media (min-width: $desktop-widths) {
   }
 }
 .main-nav__link:hover {

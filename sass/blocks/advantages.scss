@@ -10,7 +10,6 @@
     display: flex;
   }
   @media (min-width: $desktop-widths) {
-
   }
   &--blue {
     background-color: $bg-color;
@@ -19,7 +18,15 @@
       overflow: hidden;
     }
     @media (min-width: $desktop-widths) {
-
+    }
+  }
+  &--tips {
+    @media (min-width: $tablet-widths) {
+      padding-top: 100px;
+      padding-bottom: 48px;
+    }
+    @media (min-width: $desktop-widths) {
+      padding-bottom: 0;
     }
   }
 }

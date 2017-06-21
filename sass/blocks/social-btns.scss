@@ -1,7 +1,8 @@
 .social-btns {
   display: flex;
   align-content: center;
-  padding: 35px 80px;
+  flex-wrap: wrap;
+  padding: 33px 80px;
   justify-content: space-between;
   margin: 0 auto;
   @media (min-width: $tablet-widths) {
@@ -11,35 +12,32 @@
     width: 33.333333%;
   }
   @media (min-width: $desktop-widths) {
-    padding: 0;
+    margin-left: 26px;
   }
 }
 .social-btns__btn {
   text-decoration: none;
   background-color: $bg-color;
-  width: 50px;
-  height: 50px;
+  width: 47px;
+  height: 49px;
   font-size: 0;
   cursor: pointer;
   @media (min-width: $tablet-widths) {
     margin-left: 5px;
   }
-  @media (min-width: $desktop-widths) {
-
-  }
 }
 .social-btns__btn:hover {
   text-decoration: none;
   background-color: #669ec0;
-  width: 50px;
-  height: 50px;
+  width: 47px;
+  height: 49px;
   font-size: 0;
 }
 .social-btns__btn:active {
   text-decoration: none;
   background-color: #5496bd;
-  width: 50px;
-  height: 50px;
+  width: 47px;
+  height: 49px;
   font-size: 0;
 }
 .social-btns__btn--tw {
@@ -53,8 +51,8 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  top: 17px;
-  left: 15px;
+  top: 18px;
+  left: 12px;
 }
 .social-btns__btn--tw:active::after {
   position: absolute;
@@ -65,8 +63,8 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  top: 17px;
-  left: 15px;
+  top: 18px;
+  left: 12px;
 }
 .social-btns__btn--fb {
   position: relative;
@@ -79,8 +77,8 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  top: 14px;
-  left: 20px;
+  top: 15px;
+  left: 18px;
 }
 .social-btns__btn--fb:active::after {
   position: absolute;
@@ -91,8 +89,8 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  top: 14px;
-  left: 20px;
+  top: 15px;
+  left: 18px;
 }
 .social-btns__btn--youtube {
   position: relative;
@@ -106,8 +104,9 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  top: 17px;
-  left: 15px;
+  top: 18px;
+  left: 13px;
+  box-sizing: content-box;
 }
 .social-btns__btn--youtube:active::after {
   position: absolute;
@@ -118,6 +117,6 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  top: 17px;
-  left: 15px;
+  top: 18px;
+  left: 13px;
 }
