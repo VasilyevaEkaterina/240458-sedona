@@ -9,6 +9,7 @@
   @media (min-width: $desktop-widths) {
     padding-left: 120px;
     padding-right: 120px;
+    padding-top: 40px;
   }
 }
 .form__title {
@@ -133,7 +134,7 @@
   }
 }
 .form__title--contacts {
-  padding-bottom: 5px;
+  padding: 0;
   @media (min-width: $tablet-widths) {
     padding-bottom: 0;
   }
@@ -176,7 +177,7 @@
   border-top: 1px solid #E4E4E4;
   border-bottom: 1px solid #E4E4E4;
   padding-top: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 0;
   @media (min-width: $tablet-widths) {
     border: 0;
     width: 50%;
@@ -211,18 +212,18 @@
 }
 .form__block--contacts {
   text-align: left;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   @media (min-width: $tablet-widths) {
     width: 100%;
     padding-bottom: 57px;
-    padding-top: 43px;
+    padding-top: 47px;
   }
   @media (min-width: $desktop-widths) {
     padding-bottom: 30px;
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 20px;
-    padding-top: 40px;
+    padding-top: 45px;
 
   }
 }
@@ -286,7 +287,7 @@
   background-color: #e6e6e6;
   background-size: 53px 53px;
   width: 53px;
-  height: 53px;
+  height: 100%;
 }
 .form__icon--phone {
   background-image: url("/img/icon-phone.svg");
@@ -343,7 +344,7 @@
   @media (min-width: $desktop-widths) {
     padding: 0;
     padding-top: 10px;
-    margin-right: 50px;
+    margin-right: 44px;
   }
 }
 .form__field--checkbox:last-child {
@@ -362,7 +363,7 @@
   margin-bottom: 8px;
   @media (min-width: $tablet-widths) {
     padding-left: 30px;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
     margin-bottom: 0;
   }
 }
@@ -387,6 +388,7 @@
   }
 }
 .form__input {
+  font-family: "PT Sans", "Arial", sans-serif;
   background-color: #f2f2f2;
   outline: none;
   border: none;
@@ -419,24 +421,24 @@
 }
 .form__input {
       &::-webkit-input-placeholder {
-        @include title;
-        font-size: 15px;
+        font-size: 18px;
         color: #000000;
+        font-weight: 700;
       }
       &::-moz-placeholder {
         color: #000000;
-        @include title;
-        font-size: 15px;
+        font-size: 18px;
+        font-weight: 700;
       }
       &:-moz-placeholder {
         color: #000000;
-        @include title;
-        font-size: 15px;
+        font-size: 18px;
+        font-weight: 700;
       }
       &:-ms-input-placeholder {
         color: #000000;
-        @include title;
-        font-size: 15px;
+        font-size: 18px;
+        font-weight: 700;
       }
 }
 .form input[type="radio"] {
@@ -671,6 +673,7 @@
   width: 280px;
   min-height: 160px;
   padding: 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   overflow: hidden;
@@ -698,26 +701,26 @@
   padding-top: 11px;
 }
 .form__feedback {
-      &::-webkit-input-placeholder {
-        @include title;
-        font-size: 15px;
-        color: #000000;
-      }
-      &::-moz-placeholder {
-        color: #000000;
-        @include title;
-        font-size: 15px;
-      }
-      &:-moz-placeholder {
-        color: #000000;
-        @include title;
-        font-size: 15px;
-      }
-      &:-ms-input-placeholder {
-        color: #000000;
-        @include title;
-        font-size: 15px;
-      }
+    &::-webkit-input-placeholder {
+      font-size: 18px;
+      color: #000000;
+      font-weight: 700;
+    }
+    &::-moz-placeholder {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    &:-moz-placeholder {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    &:-ms-input-placeholder {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+    }
 }
 .form__button {
   padding: 20px;
@@ -736,6 +739,7 @@
 .form__btn {
   display: inline-block;
   vertical-align: middle;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;

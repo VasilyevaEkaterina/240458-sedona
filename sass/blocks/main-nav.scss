@@ -5,6 +5,12 @@
   @media (min-width: $tablet-widths) {
     margin-left: 20px;
   }
+  &--closed {
+    display: none;
+    @media (min-width: $tablet-widths) {
+      display: block;
+    }
+  }
 }
 .main-nav__items {
   @media (min-width: $tablet-widths) {

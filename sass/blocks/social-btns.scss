@@ -1,6 +1,7 @@
 .social-btns {
   display: flex;
   align-content: center;
+  flex-wrap: wrap;
   padding: 33px 80px;
   justify-content: space-between;
   margin: 0 auto;
@@ -103,7 +104,7 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  top: 20px;
+  top: 18px;
   left: 13px;
 }
 .social-btns__btn--youtube:active::after {
@@ -115,6 +116,6 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  top: 20px;
+  top: 18px;
   left: 13px;
 }

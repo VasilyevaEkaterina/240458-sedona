@@ -22,8 +22,8 @@
 .about--index {
   padding-top: 30px;
   padding-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 28px;
+  padding-right: 28px;
   @media (min-width: $tablet-widths) {
     padding-top: 40px;
     padding-bottom: 35px;
@@ -73,9 +73,18 @@
 .about__title--large {
   @media (min-width: $tablet-widths) {
     @include title;
+    padding: 0;
     font-size: 30px;
     line-height: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding: 0;
+  }
+}
+.about__title--photo {
+  @media (min-width: $desktop-widths) {
+    padding-bottom: 7px;
   }
 }
 .about__text {
@@ -86,7 +95,6 @@
   }
   @media (min-width: $desktop-widths) {
     margin-bottom: 18px;
-
   }
 }
 .about__wrap-mobile{

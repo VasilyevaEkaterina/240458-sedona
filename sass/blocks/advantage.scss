@@ -28,8 +28,8 @@
     padding-top: 45px;
   }
   @media (min-width: $desktop-widths) {
-    padding-left: 125px;
-    padding-right: 125px;
+    padding-left: 110px;
+    padding-right: 110px;
     padding-top: 49px;
   }
 }
@@ -213,6 +213,8 @@
     width: 33.333333%;
     text-align: center;
     margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   @media (min-width: $desktop-widths) {
     padding-bottom: 70px;
