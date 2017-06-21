@@ -120,6 +120,12 @@
     display: inline;
   }
 }
+.advantage__first-desktop {
+  @media (min-width: $desktop-widths) {
+    display: block;
+    padding: 0;
+  }
+}
 .advantage__description--long {
   @media (min-width: $tablet-widths) {
     padding-left: 40px;
@@ -129,15 +135,9 @@
     padding: 0;
   }
 }
-.advantage__description-tablet {
+.advantage__tablet-wrap {
   @media (min-width: $tablet-widths) {
     display: block;
-  }
-}
-.advantage__description-desktop {
-  @media (min-width: $desktop-widths) {
-    display: block;
-    padding: 0;
   }
 }
 .advantage__description--word {
@@ -150,6 +150,10 @@
 .advantage__description--tips {
   @media (min-width: $tablet-widths) {
     padding-top: 5px;
+  }
+  @media (min-width: $desktop-widths) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .advantage__number {
@@ -218,13 +222,12 @@
   }
   @media (min-width: $desktop-widths) {
     padding-bottom: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 .advantage__desktop-wrap {
   @media (min-width: $desktop-widths) {
     display: block;
+    padding: 0;
   }
 }
 .advantage__picture {
