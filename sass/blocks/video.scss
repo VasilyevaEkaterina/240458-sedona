@@ -165,12 +165,13 @@
   margin-right: 90px;
   fill: #5c6870;
   cursor: pointer;
+  box-sizing: content-box;
   @media (min-width: $tablet-widths) {
     fill: #ffffff;
-    margin-right: 445px;
+    margin-right: 460px;
   }
   @media (min-width: $desktop-widths) {
-    margin-right: 590px;
+    margin-right: 610px;
   }
 }
 .video__repeat:hover {
@@ -188,9 +189,11 @@
   outline: none;
   border: 0;
   fill: #5c6870;
+  box-sizing: content-box;
   @media (min-width: $tablet-widths) {
     fill: #ffffff;
     left: 0;
+    margin-right: 20px;
   }
 }
 .video__cc:hover {
@@ -209,6 +212,7 @@
   border: 0;
   fill: #5c6870;
   padding-right: 20px;
+  box-sizing: content-box;
   @media (min-width: $tablet-widths) {
     fill: #ffffff;
     left: 0;
