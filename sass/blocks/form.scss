@@ -300,7 +300,10 @@
   background-size: 20px 18px;
   background-repeat: no-repeat;
   background-position: center;
-  right: -20px;
+  right: 0;
+  @media (min-width: $desktop-widths) {
+    right: -20px;
+  }
 }
 .form__field {
   padding-bottom: 20px;
@@ -399,13 +402,18 @@
     width: 100%;
     box-sizing: border-box;
     margin: 0;
-    margin-left: 20px;
+    @media (min-width: $desktop-widths) {
+      margin-left: 20px;
+    }
   }
   &--e-mail {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    margin-left: 20px;
+    margin: 0;
+    @media (min-width: $desktop-widths) {
+      margin-left: 20px;
+    }
   }
   &--name {
     flex-grow: 1;

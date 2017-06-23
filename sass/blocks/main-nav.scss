@@ -92,9 +92,6 @@
 .main-nav__link:disabled {
   background-color: $bg-light;
 }
-.main-nav--closed {
-  display: none;
-}
 .main-nav__link--active {
   @media (min-width: $tablet-widths) {
     background-color: white;

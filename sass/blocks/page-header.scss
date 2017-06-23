@@ -38,6 +38,9 @@
   &--closed {
     background-image: url("/img/icon-menu.svg");
   }
+  &--nojs {
+    display: none;
+  }
   @media (min-width: $tablet-widths) {
     display: none;
   }
