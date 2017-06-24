@@ -1,7 +1,6 @@
 .intro {
   display: block;
   text-align: center;
-  background-image: url("/img/bg-back-mobile@1x.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,8 +8,11 @@
   padding-bottom: 25px;
   position: relative;
   background-color: $bg-color;
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("/img/bg-back-mobile@2x.jpg");
+  @media (max-width: $mobile-widths) {
+    background-image: url("/img/bg-back-mobile@1x.jpg");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/bg-back-mobile@2x.jpg");
+    }
   }
   @media (min-width: $tablet-widths) {
     background-image: url("/img/bg-back-tablet@1x.jpg");
