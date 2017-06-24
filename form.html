@@ -21,7 +21,10 @@
             <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">Html Academy</a></li>
           </ul>
         </nav>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <button class="page-header__toggle page-header__toggle--nojs" type="button">Открыть меню</button>
+        <!-- main-nav--closed - закрытое меню; по умолчанию - открытое меню;
+          page-header--closed - закрытое меню при включенном JS;
+          page-header--nojs - открытое меню при отключённом JS; -->
         <div class="page-header__logo">
           <a class="page-header__link" href="/index.html">
             <picture>
@@ -57,7 +60,7 @@
           <div class="form__block form__block--contacts">
             <h2 class="form__title form__title--line form__title--contacts">Контактная информация:</h2>
             <div class="form__field form__field--phone">
-              <label for="tel" class="form__label form__label--tel"><span class="form__label--phone-text">Контактный</span> телефон*:</label>
+              <label for="tel" class="form__label form__label--tel"><span class="form__label form__label--phone-text">Контактный</span> телефон*:</label>
               <div class="form__contact form__contact--phone">
                 <input type="tel" name="tel" id="tel" required placeholder="Введите телефон" pattern="[0-9]{3}" class="form__input form__input--tel">
                 <div class="form__icon form__icon--phone"></div>

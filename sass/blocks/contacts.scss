@@ -74,13 +74,15 @@
   color: rgba($color-light,0.3)
 }
 .contacts__map {
-  background-image: url("/img/bg-map-mobile@1x.jpg");
   background-size: cover;
   margin-top: 50px;
   background-position: center;
   height: 350px;
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  @media (max-width: $mobile-widths) {
+    background-image: url("/img/bg-map-mobile@1x.jpg");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("/img/bg-map-mobile@2x.jpg");
+    }
   }
   @media (min-width: $tablet-widths) {
     background-image: url("/img/bg-map-tablet@1x.jpg");
