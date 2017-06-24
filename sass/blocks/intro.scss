@@ -1,46 +1,32 @@
 .intro {
   display: block;
   text-align: center;
+  background-image: url("/img/bg-back-mobile@1x.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 50px;
   padding-bottom: 25px;
   position: relative;
   background-color: $bg-color;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-}
-@media screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .intro {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 100% 100%;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("/img/bg-back-mobile@2x.jpg");
   }
-}
-@media screen and (min-width: $tablet-widths) {
-  .intro {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: 100% 100%;
+  @media (min-width: $tablet-widths) {
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-size: cover;
     padding-bottom: 80px;
     padding-top: 98px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/bg-back-tablet@2x.jpg");
+    }
   }
-}
-@media screen and (min-width: $tablet-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .intro {
-    background-image: url("../img/bg-back-tablet@2x.jpg");
-    background-size: 100% 100%;
-  }
-}
-@media screen and (min-width: $desktop-widths) {
-  .intro {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-size: 100% 100%;
+  @media (min-width: $desktop-widths) {
     padding-bottom: 90px;
-  }
-}
-@media screen and (min-width: $desktop-widths) and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .intro {
-    background-image: url("../img/bg-back-desktop@2x.jpg");
-    background-size: 100% 100%;
+    background-image: url("/img/bg-back-desktop@1x.jpg");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 .intro--index {
