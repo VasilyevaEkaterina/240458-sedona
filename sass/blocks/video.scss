@@ -168,10 +168,10 @@
   box-sizing: content-box;
   @media (min-width: $tablet-widths) {
     fill: #ffffff;
-    margin-right: 460px;
+    padding-right: 375px;
   }
   @media (min-width: $desktop-widths) {
-    margin-right: 610px;
+    padding-right: 525px;
   }
 }
 .video__repeat:hover {

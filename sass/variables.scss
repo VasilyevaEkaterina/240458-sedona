@@ -20,4 +20,4 @@ $input-checked: #373737;
 $tablet-widths: 768px;
 $desktop-widths: 1200px;
 
-$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);
+$retina: "((min-resolution: 144dpi), (min-resolution: 1.5dppx))";
