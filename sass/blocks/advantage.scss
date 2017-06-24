@@ -173,6 +173,7 @@
   padding: 25px;
   padding-top: 40px;
   @media (min-width: $tablet-widths) {
+    min-height: 256px;
     padding: 0;
     width: 33.666666%;
   }
@@ -199,9 +200,11 @@
 }
 .advantage--image {
   padding: 0;
-  background-color: $color-light;
+  background-color: $bg-color;
   margin: 0;
   width: auto;
+  height: 256px;
+  overflow: hidden;
   @media (min-width: $tablet-widths) {
     width: 66.666666%;
   }
