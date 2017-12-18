@@ -1,5 +1,5 @@
 .popup {
-  display: none;
+  display: block;
   position: fixed;
   transform: translateX(-50%);
   left: 50%;
@@ -10,16 +10,20 @@
   box-shadow: 0 1px 1px 1px $bg-light;
   width: 320px;
 }
+.popup--closed {
+  display: none;
+}
+
 .popup--decline {
   z-index: 1000;
-  top: 50px;
+  top: 200px;
   @media (min-width: $tablet-widths) {
     width: 400px;
   }
 }
 .popup--accept {
-  z-index: 2000;
-  top: 400px;
+  z-index: 1000;
+  top: 200px;
   padding-bottom: 0;
   @media (min-width: $tablet-widths) {
     width: 645px;

@@ -13,7 +13,7 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav main-nav--nojs main-nav--closed">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и Видео</a></li>
@@ -23,8 +23,8 @@
         </nav>
         <button class="page-header__toggle page-header__toggle--nojs" type="button">Открыть меню</button>
         <!-- main-nav--closed - закрытое меню; по умолчанию - открытое меню;
-          page-header--closed - закрытое меню при включенном JS;
-          page-header--nojs - открытое меню при отключённом JS; -->
+          main-nav--closed - закрытое меню при включенном JS;
+          main-nav--nojs - открытое меню при отключённом JS; -->
         <div class="page-header__logo">
           <a class="page-header__link" href="/index.html">
             <picture>
@@ -115,20 +115,20 @@
             <textarea name="feedback" id="feedback" class="form__feedback" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
           <div class="form__button">
-            <button type="submit" class="form__btn">Отправить отзыв</button>
+            <button tabindex="0" type="submit" class="form__btn">Отправить отзыв</button>
             <span class="form__required">* - Обязательные поля</span>
           </div>
         </form>
         <div class="popup popup--decline">
           <h2 class="popup__title">Что-то пошло не так!</h2>
           <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="popup__btn" type="button">Ок</button>
+          <button tabindex="0" class="popup__btn popup__btn--decline" type="button">Ок</button>
         </div>
         <div class="popup popup--accept">
           <h2 class="popup__title">Ваш отзыв отправлен!</h2>
           <p class="popup__text popup__text--accept">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<span class="popup__text popup__text--sentence">В ближайшее время мы опубликуем его на сайте.</span></p>
           <div class="popup__button">
-            <button class="popup__btn popup__btn--accept" type="button">Закрыть окно</button>
+            <button tabindex="0" class="popup__btn popup__btn--accept" type="button">Закрыть окно</button>
           </div>
         </div>
       </main>
@@ -147,5 +147,7 @@
         </a>
       </footer>
     </div>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/modal-box.js"></script>
   </body>
 </html>
