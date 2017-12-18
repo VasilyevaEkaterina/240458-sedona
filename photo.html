@@ -13,7 +13,7 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs main-nav--closed">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Фото и Видео</a></li>
@@ -23,8 +23,8 @@
         </nav>
         <button class="page-header__toggle page-header__toggle--nojs" type="button">Открыть меню</button>
         <!-- main-nav--closed - закрытое меню; по умолчанию - открытое меню;
-          page-header--closed - закрытое меню при включенном JS;
-          page-header--nojs - открытое меню при отключённом JS; -->
+          main-nav--closed - закрытое меню при включенном JS;
+          main-nav--nojs - открытое меню при отключённом JS; -->
         <div class="page-header__logo">
           <a class="page-header__link" href="/index.html">
             <picture>
@@ -158,5 +158,6 @@
         </a>
       </footer>
     </div>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -21,6 +21,7 @@
 }
 .page-header__toggle {
   position: absolute;
+  content: "";
   display: block;
   cursor: pointer;
   height: 22px;
@@ -32,19 +33,21 @@
   border: 0;
   background: none;
   outline: none;
-  background-image: url("/img/icon-cross.svg");
   background-size: 22px 22px;
   background-repeat: no-repeat;
-  &--closed {
-    background-image: url("/img/icon-menu.svg");
-  }
-  &--nojs {
-    display: none;
-  }
   @media (min-width: $tablet-widths) {
     display: none;
   }
   @media (min-width: $desktop-widths) {
     display: none;
   }
+}
+.page-header__toggle--nojs {
+  display: none;
+}
+.page-header__toggle--opened {
+  background-image: url("/img/icon-cross.svg");
+}
+.page-header__toggle--closed {
+  background-image: url("/img/icon-menu.svg");
 }

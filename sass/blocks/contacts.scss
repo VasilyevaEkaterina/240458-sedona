@@ -74,6 +74,8 @@
   color: rgba($color-light,0.3)
 }
 .contacts__map {
+  width: 100%;
+  border: none;
   background-size: cover;
   margin-top: 50px;
   background-position: center;
@@ -99,8 +101,8 @@
     }
   }
 }
-.contacts__map iframe {
-  width: 100%;
-  height: 350px;
-  border: none;
-}
+// .contacts__map iframe {
+//   width: 100%;
+//   height: 350px;
+//   border: none;
+// }
